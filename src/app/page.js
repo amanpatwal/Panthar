@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import HoverIcons from "@/components/hoverIcons";
 import {
   Award,
@@ -54,45 +55,42 @@ export default function Home() {
     <>
       <div className="h-full w-full">
         <div
-          className=" 
-        h-[97vh] w-screen  bg-no-repeat"
+          className="h-[97vh] w-screen bg-no-repeat bg-cover relative" // Added relative for potential absolute positioning
           style={{
             backgroundImage:
               "url(https://themebuz.com/demo/panthar/assets/img/shapes/hero-shape.png)",
-            backgroundSize: "cover",
           }}
         >
-          <div className="grid grid-cols-2 pl-[92px] gap-4 py-12">
-            <div className="mt-32">
-              <div className="text-[80px] w-[900px] font-bold text-[#BA2423]">
+          <div className="grid grid-cols-1 md:grid-cols-2 pl-6 md:pl-[92px] gap-8 md:gap-4 py-12 items-center">
+            <div className="mt-16 md:mt-32">
+              <div className="text-4xl md:text-[80px] font-bold text-[#BA2423] leading-tight">
                 OFFICE SECURITY
               </div>
-              <div className="text-3xl tracking-[12px]  space-x-6 font-bold text-[#555555] pb-8">
+              <div className="text-xl md:text-3xl tracking-[0.2em] space-x-2 md:space-x-6 font-bold text-[#555555] pb-6 md:pb-8">
                 <span>FOR</span>
                 <span>YOUR</span>
                 <span>PERSONAL</span>
                 <span>SAFETY</span>
               </div>
-              <div className="text-lg text-[#555555] w-[700px]">
+              <div className="text-base md:text-lg text-[#555555] max-w-md md:max-w-[700px]">
                 American Panthar Security is looking to expand our private
                 security company in Colorado. This means we need qualified
                 professionals to join our team. We are looking for former police
                 officers and ex-military members.
               </div>
-              <div className="pt-20">
-                <button className="bg-[#F1EBED] border-2 text-black border-[#BA2423]  p-2 rounded-md">
+              <div className="mt-10 md:mt-20">
+                <button className="bg-[#F1EBED] border-2 text-black border-[#BA2423] px-6 py-3 rounded-md">
                   CONTACT US
                 </button>
               </div>
             </div>
-            <div className=" h-full">
+            <div className="flex justify-center items-center h-full">
               <Image
-                height={1080}
-                width={1920}
-                src={
-                  "https://themebuz.com/demo/panthar/assets/img/section-img/baner/banar-img-01.png"
-                }
-                className="h-[700px] w-[670px] ml-[70px]"
+                src="https://themebuz.com/demo/panthar/assets/img/section-img/baner/banar-img-01.png"
+                alt="Security Image"
+                width={670} // Set width to the original image width
+                height={700} // Set height to the original image height
+                className="w-full max-w-[670px] h-auto" // Responsive image
               />
             </div>
           </div>
@@ -223,7 +221,7 @@ export default function Home() {
         </section>
         <section className="bg-white py-12 text-center">
           <div className="container mx-auto px-4 mt-12">
-            <div className="flex pb-3 items-center justify-center space-x-2 text-[#BE2423] red-600 font-bold text-lg">
+            <div className="flex pb-3 items-center justify-center space-x-2 text-[#BE2423] font-bold text-lg">
               <span className="inline-block w-6 h-1 bg-[#BE2423]"></span>
               <span>OUR SECURITY</span>
               <span className="inline-block w-6 h-1 bg-[#BE2423]"></span>
@@ -237,50 +235,53 @@ export default function Home() {
               minim veniam quis nostrud exercitation.
             </p>
           </div>
-          <section className="ml-36 flex justify-center items-center py-10 bg-white">
-            <div className="flex  gap-6 max-w-7xl w-full">
-              <div className="border-4 border-[#BE2423] w-44 h-[510px] p-2 flex justify-center items-center flex-col">
-                <p className="text-[#BE2423] font-bold w-[400px]   rotate-[-90deg] tracking-widest">
-                  WE PERFORM OVER{" "}
-                  <span className="text-black">400 SUCCESSFUL</span> SECURITY
-                  EVERY YEAR
-                </p>
-              </div>
 
-              <div className="relative bg-[#0D1422]    text-white w-96  flex flex-col justify-center items-center">
-                <div className="absolute top-4 left-4 bg-white text-white p-5 rounded-full">
-                  <Award size={30} color="#BE2423" />
+          <section className="px-4 py-10 bg-white">
+            <div className="container mx-auto">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+                <div className="border-4 border-[#BE2423] w-full md:w-44 h-[510px] p-2 flex justify-center items-center flex-col">
+                  <p className="text-[#BE2423] font-bold w-full md:w-[400px] md:rotate-[-90deg] tracking-widest text-center md:text-left">
+                    WE PERFORM OVER{" "}
+                    <span className="text-black">400 SUCCESSFUL</span> SECURITY
+                    EVERY YEAR
+                  </p>
                 </div>
-                <Image
-                  height={1080}
-                  width={1920}
-                  src="https://themebuz.com/demo/panthar/assets/img/section-img/security/security-01.png"
-                  alt="Security Personnel"
-                  className="w-72 h-72 ml-16 mt-56 object-cover"
-                />
-              </div>
 
-              <div className="bg-[#BA2423] w-[550px] items-start text-white p-6 flex flex-col justify-center ">
-                <h2 className="text-xl font-bold mb-4">
-                  EFFECTIVE INTEGRATED SECURITY
-                </h2>
-                <p className="mb-4 text-left text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
-                  laboris sed
-                </p>
-                <ul className="grid grid-cols-2 gap-2 text-left">
-                  <li className="font-bold mb-1">- Security Consulting</li>
-                  <li className="font-bold mb-1">- Security Consulting</li>
-                  <li className="font-bold mb-1">- Private Security</li>
-                  <li className="font-bold mb-1">- Private Security</li>
-                  <li className="font-bold mb-1">- Close Protections</li>
-                  <li className="font-bold mb-1">- Close Protections</li>
-                </ul>
-                <button className="mt-4 px-6 py-2 bg-white text-red-600 font-bold rounded">
-                  CHECK ALL SERVICES
-                </button>
+                <div className="relative bg-[#0D1422] text-white w-full md:w-96 flex flex-col justify-center items-center">
+                  <div className="absolute top-4 left-4 bg-white text-white p-5 rounded-full">
+                    <Award size={30} color="#BE2423" />
+                  </div>
+                  <Image
+                    height={1080}
+                    width={1920}
+                    src="https://themebuz.com/demo/panthar/assets/img/section-img/security/security-01.png"
+                    alt="Security Personnel"
+                    className="w-full md:w-72 h-auto md:h-72 mt-20 md:mt-56 object-cover"
+                  />
+                </div>
+
+                <div className="bg-[#BA2423] w-full md:w-[550px] items-start text-white p-6 flex flex-col justify-center">
+                  <h2 className="text-xl font-bold mb-4">
+                    EFFECTIVE INTEGRATED SECURITY
+                  </h2>
+                  <p className="mb-4 text-left text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eius tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim adiqua minim veniam quis nostrud exercitation
+                    ullamco laboris sed
+                  </p>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-left">
+                    <li className="font-bold mb-1">- Security Consulting</li>
+                    <li className="font-bold mb-1">- Security Consulting</li>
+                    <li className="font-bold mb-1">- Private Security</li>
+                    <li className="font-bold mb-1">- Private Security</li>
+                    <li className="font-bold mb-1">- Close Protections</li>
+                    <li className="font-bold mb-1">- Close Protections</li>
+                  </ul>
+                  <button className="mt-4 px-6 py-2 bg-white text-red-600 font-bold rounded">
+                    CHECK ALL SERVICES
+                  </button>
+                </div>
               </div>
             </div>
           </section>
@@ -397,91 +398,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2">
-                <Image
-                  height={1080}
-                  width={1920}
-                  src="https://themebuz.com/demo/panthar/assets/img/logo/white-logo.png"
-                  alt="Panthar Logo"
-                  className="h-12 w-44"
-                />
-              </div>
-              <p className="mt-4 text-gray-400 text-sm">
-                Our team includes doormen, bodyguards, and parking lot patrol
-                officers with more than 15 years of combined experience.
-              </p>
-              <p className="mt-4 flex items-center space-x-2 text-gray-400">
-                📍 <span>Street. 2891, Denpa, Bali</span>
-              </p>
-              <p className="mt-2 flex items-center space-x-2 text-gray-400">
-                ✉️ <span>info@example.com</span>
-              </p>
-              <div className="flex space-x-4 mt-4 text-gray-400">
-                <Instagram className="cursor-pointer hover:text-white" />
-                <Twitter className="cursor-pointer hover:text-white" />
-                <Pin className="cursor-pointer hover:text-white" />
-                <Linkedin className="cursor-pointer hover:text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold border-l-4 border-red-600 pl-2">
-                OUR COMPANY
-              </h3>
-              <ul className="mt-4 space-y-2 text-gray-400 text-sm">
-                <li className="hover:text-white cursor-pointer">Home</li>
-                <li className="hover:text-white cursor-pointer">About Us</li>
-                <li className="hover:text-white cursor-pointer">Service</li>
-                <li className="hover:text-white cursor-pointer">
-                  Our Campaign
-                </li>
-                <li className="hover:text-white cursor-pointer">
-                  Our Volunteer
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold border-l-4 border-red-600 pl-2">
-                HELP
-              </h3>
-              <ul className="mt-4 space-y-2 text-gray-400 text-sm">
-                <li className="hover:text-white cursor-pointer">
-                  Event Security
-                </li>
-                <li className="hover:text-white cursor-pointer">
-                  Bank Security
-                </li>
-                <li className="hover:text-white cursor-pointer">
-                  Office Security
-                </li>
-                <li className="hover:text-white cursor-pointer">
-                  Vehicle Escort
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold border-l-4 border-red-600 pl-2">
-                STAY CONNECTED
-              </h3>
-              <div className="mt-4">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full px-4 py-2 rounded-md bg-white text-gray-800 focus:outline-none"
-                />
-                <button className="mt-3 w-full bg-gray-700 hover:bg-gray-600 flex items-center justify-center space-x-2 text-white px-4 py-2 rounded-md">
-                  <Crosshair /> <span>SUBSCRIBE NOW</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="text-center text-gray-500 text-sm mt-12 border-t border-gray-700 pt-4">
-            Copyright 2021 Panthar. Designed By themebuzs
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );

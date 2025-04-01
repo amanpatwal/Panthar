@@ -1,5 +1,6 @@
 import { Mail, MapPin, Plus, Search, Share2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -37,24 +38,39 @@ const Header = () => {
           />
         </div>
         <div className="flex justify-center items-center  text-md gap-6">
-          <div className="flex justify-center items-center gap-1 font-bold  ">
+          <Link
+            href={"/"}
+            className="flex justify-center items-center gap-1 font-bold  "
+          >
             HOME
             <Plus className="text-[#BA2423]" size={19} />
-          </div>
-          <div className="flex justify-center items-center gap-1 font-bold ">
+          </Link>
+          <Link
+            href={"/about"}
+            className="flex justify-center items-center gap-1 font-bold "
+          >
             ABOUT US
-          </div>
-          <div className="flex justify-center items-center gap-1 font-bold ">
+          </Link>
+          <Link
+            href={"/services"}
+            className="flex justify-center items-center gap-1 font-bold "
+          >
             SERVICES
             <Plus size={19} />
-          </div>
-          <div className="flex justify-center items-center gap-1 font-bold ">
+          </Link>
+          <Link
+            href={"/"}
+            className="flex justify-center items-center gap-1 font-bold "
+          >
             BLOG
             <Plus size={19} />
-          </div>
-          <div className="font-bold flex justify-center items-center gap-1 ">
+          </Link>
+          <Link
+            href={"/contact"}
+            className="font-bold flex justify-center items-center gap-1 "
+          >
             CONTACT <Search className="mx-12" />
-          </div>
+          </Link>
           <div>
             <div className="font-bold flex justify-center items-center gap-1 ">
               For <span className="text-[#BA2423]"> Emergency!</span>
