@@ -26,7 +26,7 @@ const HoverIcons = () => {
   ];
   return (
     <section className="py-10 mt-4 bg-white">
-      <div className="container mx-auto flex justify-center items-center gap-52 flex-wrap">
+      <div className="container mx-auto flex justify-center items-center gap-10  md:gap-52 flex-wrap">
         {logos.map((logo, index) => (
           <div key={index} className="h-12 w-auto flex items-center">
             <Image

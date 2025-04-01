@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link";
 
 import Image from "next/image";
 import Banner from "@/components/banner";
-import Footer from "@/components/footer";
 
 const services = [
   {
@@ -82,7 +80,6 @@ const Service = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

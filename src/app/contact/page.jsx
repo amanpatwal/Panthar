@@ -1,5 +1,4 @@
 import Banner from "@/components/banner";
-import Footer from "@/components/footer";
 import React from "react";
 
 const Contact = () => {
@@ -218,8 +217,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

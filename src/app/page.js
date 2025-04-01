@@ -53,15 +53,15 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="h-full w-full">
+      <div className="h-full w-full overflow-x-hidden">
         <div
-          className="h-[97vh] w-screen bg-no-repeat bg-cover relative" // Added relative for potential absolute positioning
+          className="md:h-[97vh] w-screen bg-no-repeat bg-cover relative"
           style={{
             backgroundImage:
               "url(https://themebuz.com/demo/panthar/assets/img/shapes/hero-shape.png)",
           }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 pl-6 md:pl-[92px] gap-8 md:gap-4 py-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 pl-6 md:pl-[92px] gap-8 md:gap-4 pb-0 py-12 items-center">
             <div className="mt-16 md:mt-32">
               <div className="text-4xl md:text-[80px] font-bold text-[#BA2423] leading-tight">
                 OFFICE SECURITY
@@ -88,9 +88,9 @@ export default function Home() {
               <Image
                 src="https://themebuz.com/demo/panthar/assets/img/section-img/baner/banar-img-01.png"
                 alt="Security Image"
-                width={670} // Set width to the original image width
-                height={700} // Set height to the original image height
-                className="w-full max-w-[670px] h-auto" // Responsive image
+                width={670}
+                height={700}
+                className="w-full max-w-[670px] h-auto"
               />
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
               Why Choose Us{" "}
               <span className="inline-block w-6 h-1 bg-[#BA2423]"></span>
             </h3>
-            <h2 className="text-4xl font-extrabold text-gray-900 mt-6">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mt-6">
               PROFESSIONAL SECURITY <br /> SERVICES YOU CAN TRUST
             </h2>
             <p className="mt-7 text-black  w-[460px]">
@@ -139,7 +139,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="md:w-1/2 mt-10 md:mt-0 relative flex justify-center">
+          <div className="md:w-1/2 w-full mt-10 md:mt-0 relative flex justify-center">
             <Image
               src="https://themebuz.com/demo/panthar/assets/img/section-img/choose/why.png"
               alt="Security Team"
@@ -154,8 +154,8 @@ export default function Home() {
         </section>
         <section className="bg-[#0D1522] py-16 pb-20 mt-20 px-8 ">
           <div className="max-w-6xl mx-auto text-center">
-            <div className="flex justify-center space-x-6 mb-8 mt-12">
-              <div className="bg-[#BE2423] p-10 border-8 border-white text-white flex-1 max-w-md">
+            <div className="flex flex-col md:flex-row gap-4 justify-center md:space-x-6 mb-8 mt-12">
+              <div className="bg-[#BE2423] p-10 border-8 border-white text-white w-full flex-1 md:max-w-md">
                 <div className="flex items-center space-x-7">
                   <div className="bg-white p-3 rounded">
                     <Calculator color="#BE2423" size={50} />
@@ -166,7 +166,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#BE2423] p-10 border-8 border-white text-white flex-1 max-w-md">
+              <div className="bg-[#BE2423] p-10 border-8 border-white text-white w-full flex-1 md:max-w-md">
                 <div className="flex items-center space-x-7">
                   <div className="bg-white p-3 rounded">
                     <Users color="#BE2423" size={50} />
@@ -185,11 +185,11 @@ export default function Home() {
               CASES SOLVED{" "}
               <span className="ml-2 inline-block w-7 h-1 bg-[#BA2423]"></span>
             </div>
-            <div className="text-white font-bold text-4xl">
+            <div className="text-white text-center font-bold text-4xl">
               SOLVED MANY CRITICAL CASES
             </div>
           </div>
-          <div className="grid grid-cols-3 mx-auto max-w-7xl px-20 gap-4 mt-12">
+          <div className="grid   md:grid-cols-3 mx-auto max-w-7xl px-20 gap-4 mt-12">
             <div className="">
               <Image
                 height={1080}
@@ -398,7 +398,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     </>
   );

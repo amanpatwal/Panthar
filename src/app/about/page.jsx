@@ -14,7 +14,6 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 import Banner from "@/components/banner";
-import Footer from "@/components/footer";
 
 const Page = () => {
   const cards = [
@@ -307,7 +306,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
