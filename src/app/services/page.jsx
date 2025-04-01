@@ -39,7 +39,7 @@ const services = [
 const Service = () => {
   return (
     <>
-      <Banner title="Services" />
+      <Banner title="Services" newName="Services" />
       <section className=" py-16">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row max-w-7xl mx-auto items-center justify-between">

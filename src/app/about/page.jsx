@@ -94,7 +94,7 @@ const Page = () => {
 
   return (
     <>
-      <Banner title="About Us" />
+      <Banner title="About Us" names="Home" newName="About Us" />
 
       <section className="py-10 px-5 md:px-20 bg-gray-100">
         <div className="flex items-center">

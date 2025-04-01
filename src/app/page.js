@@ -66,7 +66,7 @@ export default function Home() {
               <div className="text-4xl md:text-[80px] font-bold text-[#BA2423] leading-tight">
                 OFFICE SECURITY
               </div>
-              <div className="text-xl md:text-3xl tracking-[0.2em] space-x-2 md:space-x-6 font-bold text-[#555555] pb-6 md:pb-8">
+              <div className="text-xl md:text-3xl  space-x-1 md:space-x-6 font-bold text-[#555555] pb-6 md:pb-8">
                 <span>FOR</span>
                 <span>YOUR</span>
                 <span>PERSONAL</span>
@@ -96,22 +96,22 @@ export default function Home() {
           </div>
         </div>
         <HoverIcons />
-        <section className="py-16 mx-auto max-w-7xl px-20 bg-white flex flex-col md:flex-row items-center">
+        <section className="py-16 mx-auto max-w-7xl px-16 bg-white flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left">
-            <h3 className="text-[#BA2423] font-bold uppercase text-lg flex items-center gap-2">
+            <h3 className="text-[#BA2423] font-bold uppercase  px-3 text-lg flex items-center gap-2">
               Why Choose Us{" "}
               <span className="inline-block w-6 h-1 bg-[#BA2423]"></span>
             </h3>
             <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mt-6">
               PROFESSIONAL SECURITY <br /> SERVICES YOU CAN TRUST
             </h2>
-            <p className="mt-7 text-black  w-[460px]">
+            <p className="mt-7 text-black px-3  w-[460px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
               adiqua minim veniam quis nostrud exercitation ullamco laboris sed
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mt-6 text-left">
+            <div className="grid grid-cols-2 gap-4 mt-6 px-4 text-left">
               <p className="text-gray-900 font-bold flex items-center gap-2">
                 <span className="text-[#BA2423]">—</span> Security Consulting
               </p>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 
-const Banner = ({ title }) => {
+const Banner = ({ title, names, newName }) => {
   return (
     <section className="relative w-full h-[350px] bg-black flex items-center">
       <div className="absolute inset-0">
@@ -22,10 +22,10 @@ const Banner = ({ title }) => {
 
         <div className="flex items-center mt-3 text-gray-300">
           <Link href="/" className="flex items-center hover:text-white">
-            <span className="material-icons">home</span> Home
+            <span className="material-icons"></span> Home
           </Link>
           <span className="mx-2 text-red-500">➝</span>
-          <span className="text-red-500">Service</span>
+          <span className="text-red-500">{newName}</span>
         </div>
       </div>
     </section>
